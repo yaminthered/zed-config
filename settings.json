@@ -10,9 +10,9 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "ui_font_size": 14,
-  "buffer_font_size": 14.6,
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Mocha - No Italics",
@@ -54,5 +54,31 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "gutter": {
+    "line_numbers": true,
+    "code_actions": false,
+    "runnables": false,
+    "folds": false
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "rust": {
+          "analyzerTargetDir": true
+        }
+      }
+    }
+  },
+  "auto_install_extension": {
+    "catppuccin": true,
+    "jetbrains-new-ui-icons": true,
+    "git-firefly": true,
+    "html": true,
+    "emmet": true,
+    "env": true,
+    "dockerfile": true,
+    "live-server": true,
+    "toml": true
   }
 }
