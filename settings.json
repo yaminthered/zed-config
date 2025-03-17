@@ -59,7 +59,7 @@
     "line_numbers": true,
     "code_actions": false,
     "runnables": false,
-    "folds": false
+    "folds": true
   },
   "lsp": {
     "rust-analyzer": {
