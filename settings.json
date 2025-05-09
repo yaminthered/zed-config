@@ -7,8 +7,20 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": true,
+  "edit_predictions": {
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "terminal": {
+    "dock": "bottom"
+  },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "icon_theme": "JetBrains New UI Icons (Dark)",
   "ui_font_size": 15,
@@ -20,7 +32,6 @@
   },
   "ui_font_family": "Hack Nerd Font",
   "buffer_font_family": "Hack Nerd Font",
-
   "outline_panel": {
     "dock": null,
     "button": false
@@ -36,11 +47,12 @@
     "dock": null,
     "button": false
   },
-
-  "assistant": {
+  "agent": {
+    "default_profile": "ask",
+    "dock": "bottom",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
@@ -52,8 +64,12 @@
     }
   },
   "telemetry": {
-    "diagnostics": false,
+    "diagnostics": true,
     "metrics": false
+  },
+  "journal": {
+    "path": "~",
+    "hour_format": "hour24"
   },
   "gutter": {
     "line_numbers": true,
@@ -61,6 +77,7 @@
     "runnables": false,
     "folds": true
   },
+  "unnecessary_code_fade": 0.5,
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -80,5 +97,6 @@
     "dockerfile": true,
     "live-server": true,
     "toml": true
-  }
+  },
+  "tab_size": 2
 }
